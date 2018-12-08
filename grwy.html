@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web GIS</title>
+    <embed src="E:\DS\webGIS\gerenwangye\grwy\棠梨煎雪.mp3" hidden="true" autostart="false" loop="1">
+    <style type="text/css"> *{margin:0;padding:0;}
+        li{list-style:none;}
+        a{text-decoration: none;}
+        video{
+        object-fit: fill;
+        width: 200px;
+        height: 200px;
+
+        }
+        img{
+        width: 50px;
+        height: 50px;
+        }
+        body{
+            min-width: 1365px;
+            min-height: 630px;
+            position: relative;
+        }
+        #left-content{
+            width: 280px;
+            height: 630px;
+            background-color:pink;
+            background-size: 280px 630px;
+        }
+        #left-content div{
+            position: absolute;
+            top: 108px;
+            left: 60px;
+            width: 160px;
+            height: 160px;
+            border-radius: 160px;
+            background-color: #4dabf6;
+        }
+        #left-content div .logo{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 140px;
+            height: 140px;
+            border-radius: 140px;
+            background: url("1.jpg") no-repeat;
+            background-size: 140px 140px;
+        }
+        #left-content ul{
+            position: absolute;
+            top: 260px;
+            left: 95px;
+        }
+        #left-content ul li{
+            cursor: pointer;
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1em;
+            color: #fff;
+        }
+        #left-content ul li:hover{
+            color: red;
+        }
+        #left-content ul li .profile{
+            display: none;
+            position: absolute;
+            top: -260px;
+            left: 175px;
+            width: 1095px;
+            height: 630px;
+            border-radius: 0;
+            background: url('5.jpg') no-repeat;
+            background-size: 1095px 630px;
+        }
+        #left-content ul li .profile li{
+            text-indent: 2em;
+            margin-top:20px;
+            font-size: 16px;
+            color: #000;
+            letter-spacing: 0;
+        }
+        #left-content ul li:nth-child(1):hover .profile{
+            display: block;
+            z-index: 10;
+        }
+        #left-content ul li .exe{
+            display: none;
+            position: absolute;
+            top: -260px;
+            left: 175px;
+            width: 1095px;
+            height: 630px;
+            border-radius: 0;
+            background: url('樱桃沟一.jpg') no-repeat;
+            background-size: 1095px 630px;
+        }
+        #left-content ul li .exe p{
+            margin-top: 20px;
+            text-indent: 2em;
+            font-size: 18px;
+            letter-spacing: 0;
+            color: #000;
+        }
+        #left-content ul li:nth-child(2):hover .exe{
+            display: block;
+            z-index: 10;
+        }
+        #left-content ul li .skills{
+            display: none;
+            position: absolute;
+            top: -260px;
+            left: 175px;
+            width: 1095px;
+            height: 630px;
+            border-radius: 0;
+            background-size: 1095px 630px;
+        }
+        #left-content ul li:nth-child(3):hover .skills{
+            display: block;
+            z-index: 10;
+        }
+        #left-content ul li .rewards{
+            display: none;
+            position: absolute;
+            top: -260px;
+            left: 175px;
+            width: 1095px;
+            height: 630px;
+            border-radius: 0;
+            background: url('樱花一.jpg') no-repeat;
+            background-size: 1095px 630px;
+        }
+        #left-content ul li:nth-child(4):hover .rewards{
+            display: block;
+            z-index: 10;
+        }
+        #right-content{
+            position: absolute;
+            top: -20px;
+            left: 270px;
+            width: 1095px;
+            height: 630px;
+        }
+        #right-content .first-bg{
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 1095px;
+            height: 630px;
+            background: url('2.jpg') no-repeat;
+            background-size: 1095px 630px;
+            z-index: 1;
+        }
+        #right-content .first-bg h1{
+            margin-top: 200px;
+            margin-left: 100px;
+            letter-spacing: 10px;
+        } 
+    </style>
+</head>
+<body>
+    <div id="left-content">
+        <div>
+            <div class="logo"></div>
+        </div>
+        <ul>
+            <li><a href=" https://anyiheluoli.github.io/grjl/grjl.html">简历</a></li>   
+            <li><a href=" https://anyiheluoli.github.io/jx/jx.html">故乡</a></li> 
+            <li><a href="https://anyiheluoli.github.io/xc/xc.html">风景</a></li>
+            <li><a href=" https://anyiheluoli.github.io/zp/zp.html">作品</a></li>
+            <li><a href="http://www.cqjtu.edu.cn">交大</a></li> 
+            <li><a href="https://baike.baidu.com/item/%E8%A5%BF%E4%B9%A1%E5%8E%BF/63068?fromtitle=%E8%A5%BF%E4%B9%A1&fromid=774428&fr=aladdin">西乡</a></li>  
+            <li><a href="http://www.nasg.gov.cn/">测绘局</a></li>
+        </ul>
+    </div>
+    <div id="right-content">
+        <div class="first-bg"><h1></h1></div>
+    </div>
+    <script  type="text/javascript">
+function click1(obj)
+{
+  var piframe=document.getElementById("piframe");
+  var psrc=obj.getAttribute("title");
+  piframe.setAttribute("src",psrc);
+}
+    </script>
+</body>
+</html>
